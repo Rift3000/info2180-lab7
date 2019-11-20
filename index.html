@@ -4,30 +4,30 @@
         <meta charset="utf-8">
 		<title>World Database Lookup</title>
 
-		<!-- you can modify this as needed or to your preference -->
+
 		<link href="world.css" type="text/css" rel="stylesheet" />
 
-		<!-- you write this -->
+
 		<script src="world.js" type="text/javascript"></script>
 		<script src="https://kit.fontawesome.com/449908a2fc.js" crossorigin="anonymous"></script>
 	</head>
 
 	<body>
 		<header>
-			<h1>World Database Lookup</h1>
+			<h1 style="text-align:center">World Database Lookup</h1>
 		</header>
 
 		<main>
 			<div id="controls">
-				<label for="country">Country:</label>
-				<input id="country" type="search" name="country" placeholder="Enter country name" />
+				<input class="searcher" id="country" type="search" name="country" placeholder="Enter country name" />
 				<button onclick="cSearch()" id="lookup"><i class="fa fa-search-plus" aria-hidden="true">Lookup</i></button>
+				<button onclick="cSearch()" class="fix" id="city"><i class="fas fa-city"></i> Cities</button>
 				<label for="allCheck"> Everything: </label>
 				<input id="allCheck" type="checkbox" name="All Countries" unchecked/>
 			</div>
 			
 			<div id="result">
-				<!-- countries will appear here -->
+			
 			</div>
 		</main>
 

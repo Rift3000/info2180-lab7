@@ -1,3 +1,4 @@
+
 function cSearch(){
     var check = document.getElementById("country").value;
     var request = new XMLHttpRequest();
@@ -8,6 +9,7 @@ function cSearch(){
             document.getElementById("result").innerHTML = this.responseText;
             console.log(this.responseText.replace(/<\/?[^>]+(>|$)/g, " ")); 
         }
+        
     };
     
     if (document.getElementById('allCheck').checked)
@@ -17,7 +19,7 @@ function cSearch(){
     else
     {
         var url = "world.php?country="+check;
-    }
+    };
     
     
     request.open("GET",url,true);
